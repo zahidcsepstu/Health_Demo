@@ -34,13 +34,11 @@ public class BloodPressure extends AppCompatActivity {
         barChart.setData(barData);
         barChart.getAxisLeft().setDrawGridLines(false);
         barChart.getXAxis().setDrawGridLines(false);
+        barChart.getHighlightByTouchPoint(0,2f);
         barChart.getDescription().setEnabled(false);
         final GifView gifView=findViewById(R.id.gif2);
 
         gifView.play();
-
-
-
 
 
         button.setOnClickListener(new View.OnClickListener() {

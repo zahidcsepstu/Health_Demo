@@ -59,7 +59,7 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
         mChart.setTouchEnabled(true);
         mChart.setDragEnabled(true);
         mChart.setScaleEnabled(true);
-        mChart.setDrawGridBackground(false);
+        mChart.setDrawGridBackground(true);
         mChart.setPinchZoom(true);
         mChart.setBackgroundColor(Color.WHITE);
         LineData data = new LineData();
@@ -78,9 +78,9 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
         leftAxis.setDrawGridLines(true);
         YAxis rightAxis = mChart.getAxisRight();
         rightAxis.setEnabled(false);
-        mChart.getAxisLeft().setDrawGridLines(false);
-        mChart.getXAxis().setDrawGridLines(false);
-        mChart.setDrawBorders(false);
+        mChart.getAxisLeft().setDrawGridLines(true);
+        mChart.getXAxis().setDrawGridLines(true);
+        mChart.setDrawBorders(true);
         feedMultiple();
 
 
@@ -98,7 +98,7 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
             data.addEntry(new Entry(set.getEntryCount(), event.values[0]+5), 0);
             data.notifyDataChanged();
             mChart.notifyDataSetChanged();
-            mChart.setVisibleXRangeMaximum(50);
+            mChart.setVisibleXRangeMaximum(20);
             mChart.moveViewToX(data.getEntryCount());
 
         }
@@ -108,7 +108,7 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
 
         LineDataSet set = new LineDataSet(null, "Dynamic Data");
         set.setAxisDependency(YAxis.AxisDependency.LEFT);
-        set.setLineWidth(2f);
+        set.setLineWidth(1f);
         set.setColor(Color.GREEN);
         set.setHighlightEnabled(true);
         set.setDrawValues(false);
