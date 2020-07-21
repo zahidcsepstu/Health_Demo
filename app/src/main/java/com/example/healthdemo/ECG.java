@@ -40,15 +40,7 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_e_c_g);
-
-
-
-
-
-
-
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-
         assert mSensorManager != null;
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         if (mAccelerometer != null) {
@@ -162,26 +154,19 @@ public class ECG extends AppCompatActivity implements SensorEventListener{
             plotData = false;
         }
     }
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
-
-
     @Override
     protected void onResume() {
         super.onResume();
         mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME);
     }
-
     @Override
     protected void onDestroy() {
         mSensorManager.unregisterListener(ECG.this);
         thread.interrupt();
         super.onDestroy();
     }
-
-
-
 }
