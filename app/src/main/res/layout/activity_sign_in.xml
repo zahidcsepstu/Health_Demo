@@ -46,6 +46,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="@dimen/end_margin"
         android:hint="@string/user_name"
+        android:textColorHint="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/person_icon"
         app:layout_constraintTop_toTopOf="parent" >
@@ -67,6 +68,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="@dimen/end_margin"
         android:hint="@string/password"
+        android:textColorHint="@android:color/darker_gray"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/pass_icon"
@@ -89,6 +91,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="@dimen/end_margin"
         android:hint="@string/email"
+        android:textColorHint="@android:color/darker_gray"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/email_icon"
