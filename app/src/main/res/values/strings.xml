@@ -6,6 +6,6 @@
     <string name="sign_up_right_way">Sign up right way</string>
     <string name="forgot_password">Forgot password</string>
     <string name="sign_in">Sign IN</string>
-    <string name="email">email</string>
-    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
