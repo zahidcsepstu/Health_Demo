@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--default font size-->
+    <dimen name="font_size_smallest_smallest">8sp</dimen>
+    <dimen name="font_size_smallest">10sp</dimen>
+    <dimen name="font_size_smaller">11sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_semi_medium">14sp</dimen>
+    <dimen name="font_size_medium">16sp</dimen>
+    <dimen name="font_size_medium_v2">18sp</dimen>
+    <dimen name="font_size_semi_large">20sp</dimen>
+    <dimen name="font_size_large">22sp</dimen>
+    <dimen name="font_size_larger">24sp</dimen>
+    <dimen name="font_size_largest">28sp</dimen>
+    <dimen name="font_size_super_large">30sp</dimen>
+    <dimen name="font_size_super_larger">34sp</dimen>
+    <dimen name="font_size_super_largest">40sp</dimen>
+    <!--TODO: Add Descriptions-->
+    <dimen name="butoon_width">500dp</dimen>
+    <dimen name="butoon_height">500dp</dimen>
+
+</resources>
