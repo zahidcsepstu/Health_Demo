@@ -19,4 +19,10 @@
     <dimen name="butoon_width">500dp</dimen>
     <dimen name="butoon_height">500dp</dimen>
 
+    <!--icon size-->
+    <dimen name="icon_width">20dp</dimen>
+    <dimen name="icon_height">20dp</dimen>
+    <dimen name="end_margin">16dp</dimen>
+    <dimen name="start_margin">20dp</dimen>
+
 </resources>

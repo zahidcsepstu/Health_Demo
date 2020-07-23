@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity  {
 
-    Button ECG, BP,history;
+    Button ECG, BP,history,signIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         ECG=findViewById(R.id.button2);
         BP=findViewById(R.id.button3);
-        history=findViewById(R.id.button4);
+        history=findViewById(R.id.button5);
+        signIn=findViewById(R.id.sign_in_button);
 
         ECG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, History.class);
+                startActivity(intent);
+            }
+        });
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, SignIn.class);
                 startActivity(intent);
             }
         });
