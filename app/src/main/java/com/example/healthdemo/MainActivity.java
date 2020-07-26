@@ -1,4 +1,5 @@
 package com.example.healthdemo;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -20,6 +21,11 @@ public class MainActivity extends AppCompatActivity  {
         history=findViewById(R.id.button5);
         signIn=findViewById(R.id.sign_in_button);
         signUp=findViewById(R.id.sign_up_button);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null){
+            actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.gradient_action_bar));
+        }
 
         ECG.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -15,4 +15,7 @@
     <string name="registration_means_you_agree">Registration means you agree</string>
     <string name="user_agreement_privacy_policy">User Agreement | Privacy Policy</string>
     <string name="sign_up">Sign Up</string>
+    <string name="ques_1">Do you feel any of these: your handsor feet are always cold, your legs or ankles appear swollen, your feet or hands tingle or frequently feel numb ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

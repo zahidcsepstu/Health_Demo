@@ -22,6 +22,7 @@
     <!--icon size-->
     <dimen name="icon_width">25dp</dimen>
     <dimen name="icon_height">25dp</dimen>
+    <dimen name="radio_button_margin">100dp</dimen>
     <dimen name="end_margin">30dp</dimen>
     <dimen name="start_margin">25dp</dimen>
     <dimen name="start_margin_text_field">1dp</dimen>
