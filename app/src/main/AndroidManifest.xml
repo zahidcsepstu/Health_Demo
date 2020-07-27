@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Self_Assesment"></activity>
+        <activity android:name=".BloodPressure1"></activity>
+        <activity android:name=".Self_Assesment" />
         <activity android:name=".RothmanIndex" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SignUp" />
@@ -17,7 +18,7 @@
         <activity android:name=".BloodPressure" />
         <activity android:name=".History" />
         <activity android:name=".ECG" />
-        <activity android:name=".BloodPressure1">
+        <activity android:name=".BodyTemperature">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
