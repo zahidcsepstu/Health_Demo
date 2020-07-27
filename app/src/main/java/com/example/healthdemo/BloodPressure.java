@@ -57,7 +57,7 @@ public class BloodPressure extends AppCompatActivity {
 
 
         button=findViewById(R.id.button);
-        seekBar=(CustomSeekBar)findViewById(R.id.custom_seek_bar);
+        seekBar= findViewById(R.id.custom_seek_bar);
         initDataToSeekbar();
 
        // barChart=findViewById(R.id.bar_chart);
@@ -103,6 +103,7 @@ public class BloodPressure extends AppCompatActivity {
         progressItemList.add(mProgressItem);
         // green span
         mProgressItem = new ProgressItem();
+        float greenSpan = 400;
         mProgressItem.progressItemPercentage = (greenSpan / totalSpan) * 100;
         mProgressItem.color = R.color.red;
         progressItemList.add(mProgressItem);
