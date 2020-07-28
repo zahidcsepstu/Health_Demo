@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BodyTemperature">
+    tools:context=".BodyTemp1">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/circle"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,14 +22,16 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/body_ntemperature"
+            android:text="Body\nTemperature"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="24sp" />
+
         <LinearLayout
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
@@ -56,13 +56,12 @@
         </LinearLayout>
 
 
-
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="25dp"
             android:background="@drawable/text_border"
             android:padding="5dp"
             android:text="Normal"
@@ -72,11 +71,11 @@
     </LinearLayout>
 
     <com.example.healthdemo.CustomSeekBar
-        android:id="@+id/custom_seek_bar_4"
+        android:id="@+id/custom_seek_bar_7"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:layout_weight="4"
         android:max="100"
@@ -84,6 +83,7 @@
         android:progressDrawable="@android:color/transparent"
         android:thumb="@drawable/custom_thumb"
         android:thumbOffset="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />

@@ -125,6 +125,38 @@ class ProgressItem {
 
     public int color;
     public float progressItemPercentage;
+
+
+
+    static void initDataToSeekbar(CustomSeekBar seekBar) {
+         float totalSpan = 1000;
+         float redSpan = 300;
+         float blueSpan = 300;
+         ArrayList<ProgressItem> progressItemList;
+         ProgressItem mProgressItem;
+        progressItemList = new ArrayList<ProgressItem>();
+        // red span
+        mProgressItem = new ProgressItem();
+        mProgressItem.progressItemPercentage = ((redSpan / totalSpan) * 100);
+        Log.i("Mainactivity", mProgressItem.progressItemPercentage + "");
+        mProgressItem.color = R.color.yellow;
+        progressItemList.add(mProgressItem);
+        // blue span
+        mProgressItem = new ProgressItem();
+        mProgressItem.progressItemPercentage = (blueSpan / totalSpan) * 100;
+        mProgressItem.color = R.color.green;
+        progressItemList.add(mProgressItem);
+        // green span
+        mProgressItem = new ProgressItem();
+        float greenSpan = 400;
+        mProgressItem.progressItemPercentage = (greenSpan / totalSpan) * 100;
+        mProgressItem.color = R.color.red;
+        progressItemList.add(mProgressItem);
+
+
+        seekBar.initData(progressItemList);
+        seekBar.invalidate();
+    }
 }
 
 

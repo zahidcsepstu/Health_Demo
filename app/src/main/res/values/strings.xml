@@ -27,4 +27,7 @@
     <string name="body_temperature">Body Temperature  </string>
     <string name="spo2">-%/--bpm</string>
     <string name="heart_rate">SpO2/Heart Rate</string>
+    <string name="insert_strip">Please insert the blood glucose test strip into the blood glucose test port of the device</string>
+    <string name="next">next</string>
+    <string name="body_ntemperature">Body\nTemperature</string>
 </resources>
